@@ -6,4 +6,8 @@ public class Giraffe extends Animal {
 		super(fav_food, hunger);
 	}
 
+	public void play() {
+		System.out.println("Giraffe! I am playing.");
+	}
+	
 }
