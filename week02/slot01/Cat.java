@@ -1,6 +1,8 @@
 package week02.slot01;
 
-public class Cat {
+import week05.slot01.Playful;
+
+public class Cat implements Playful {
 	
 	int moodLevel;
 	int hungerLevel;
@@ -46,6 +48,11 @@ public class Cat {
 	@Override
 	public String toString() {
 		return "Cat [moodLevel=" + moodLevel + ", hungerLevel=" + hungerLevel + ", name=" + name + "]";
+	}
+
+	@Override
+	public void play() {
+		System.out.println("MEOW! I am playing.");
 	}
 	
 //	public String eat() {
